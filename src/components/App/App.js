@@ -6,7 +6,7 @@ import SearchBar from "../SearchBar/SearchBar";
 
 import Yelp from "../../util/Yelp";
 
-
+// class App renders the components and passes information between them, it also handles calling Yelp.search function
 class App extends React.Component{
 
     constructor(props) {
@@ -19,6 +19,7 @@ class App extends React.Component{
         this.searchYelp = this.searchYelp.bind(this);
     }
 
+    //search function using Yelp.js
     searchYelp(term, location, sortBy) {
         Yelp.search(term, location, sortBy)
             .then( businesses => {this.setState(

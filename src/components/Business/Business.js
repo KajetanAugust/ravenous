@@ -3,7 +3,7 @@ import React from "react";
 //importing css
 import './Business.css'
 
-//class component returns one business tile with provided information
+//class component gets businesses info from BusinessList.js and returns one business tile with provided information
 class Business extends React.Component {
     render() {
         return(
