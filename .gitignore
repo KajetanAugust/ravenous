@@ -23,9 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # Webstorm files
-
 .idea
 
-# YELP API
-
-src/util

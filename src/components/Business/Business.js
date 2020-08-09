@@ -1,12 +1,15 @@
 import React from "react";
+
+//importing css
 import './Business.css'
 
+//class component returns one business tile with provided information
 class Business extends React.Component {
     render() {
         return(
             <div className="Business">
                 <div className="image-container">
-                    <img src='https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg' alt=''/>
+                    <img src={this.props.business.imageSrc} alt=''/>
                 </div>
                 <h2>{this.props.business.name}</h2>
                 <div className="Business-information">
